@@ -11,7 +11,7 @@ class Create extends Component  {
   constructor() {
         super()
         this.state = {
-            heading: 'Your personalized response will be shown here',
+            heading: 'Your personalized AI-generated response will be shown here',
             response: 'Please Wait A Moment'
         }
     }
