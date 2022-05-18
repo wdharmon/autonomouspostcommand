@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  font-family: 'BwModelica'!important;
+  color: #393c41;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+video {
+
+width: 700px;
+height: auto;
+aspect-ratio: 16 / 9;
+  
+}
