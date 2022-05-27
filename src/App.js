@@ -10,7 +10,7 @@ import Resources from "./components/Resources"
 import Create from "./components/Create"
 import Testimonials from "./components/Testimonials"
 import About from "./components/About"
-
+import Login from "./components/Login"
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -32,6 +32,7 @@ function App() {
         <Route path = "/Create" exact element = {<Create/>}     />
         <Route path = "/Testimonials" exact element = {<Testimonials/>}     />
         <Route path = "/About" exact element = {<About/>}     />
+        <Route path = "/Login" exact element = {<Login/>} />
 
       </Routes>
       

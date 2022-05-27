@@ -25,6 +25,8 @@ function Header() {
         <RightMenu>
             <p><a href="/Testimonials">Testimonials</a></p>
             <p><a href="/About">About Us</a></p>
+            <p><a href="/Login">Log In</a></p>
+
 
         </RightMenu>
 
