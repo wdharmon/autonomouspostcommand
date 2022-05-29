@@ -13,7 +13,16 @@ const [user, setUser] = useState({});
     var userObject = jwt_decode(response.credential);
     console.log(userObject);
     setUser(userObject);
+    document.getElementById("signInDiv").hidden = true;
   }
+
+function handleSignOut(event) {
+
+  setUser({});
+  document.getElementById("sinInDiv").hidden = false;
+
+}
+
 
  useEffect(() => {
 /* global google */
@@ -37,7 +46,11 @@ const [user, setUser] = useState({});
         
         /> 
         <div id = "signInDiv"></div>
+        { Object.keys(user).length != 0 &&
+        <button onClick = { (e) => handleSignOut(e) }>Log Out</button>
+        }
 
+        <button onClick = { (e) => handleSignOut(e) }>Log Out</button>
         {user &&
         
         <div>
