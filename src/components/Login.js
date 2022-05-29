@@ -50,7 +50,6 @@ function handleSignOut(event) {
         <button onClick = { (e) => handleSignOut(e) }>Log Out</button>
         }
 
-        <button onClick = { (e) => handleSignOut(e) }>Log Out</button>
         {user &&
         
         <div>
