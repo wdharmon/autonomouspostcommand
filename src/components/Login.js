@@ -41,7 +41,7 @@ const [user, setUser] = useState({});
         {user &&
         
         <div>
-          <img src={user.picture}></img>
+          <img src={user.picture} alt = "Profile Picture"></img>
           <h3>{user.name}</h3>
         </div>
         
