@@ -27,7 +27,7 @@ class Create extends Component  {
       // OPENAI Section
 
       const configuration = new Configuration({
-        apiKey: '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',
+        apiKey: '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',
       });
       const openai = new OpenAIApi(configuration);
       
