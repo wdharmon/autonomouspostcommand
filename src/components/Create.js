@@ -3,9 +3,14 @@ import styled from 'styled-components'
 // import Section from "./Section"
 import {Component} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
+// const dotenv = require('dotenv');
+
 
 const { Configuration, OpenAIApi } = require("openai");
 
+// dotenv.config({
+//   path: '../.env'
+// })
 
 class Create extends Component  {
   constructor() {
@@ -27,7 +32,7 @@ class Create extends Component  {
       // OPENAI Section
 
       const configuration = new Configuration({
-        apiKey: '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',
+        apiKey: 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, //replace with apikey
       });
       const openai = new OpenAIApi(configuration);
       
