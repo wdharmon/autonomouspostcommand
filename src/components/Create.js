@@ -32,7 +32,7 @@ class Create extends Component  {
       // OPENAI Section
 
       const configuration = new Configuration({
-        apiKey: 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, //replace with apikey
+        apiKey: "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", //replace with apikey
       });
       const openai = new OpenAIApi(configuration);
       
