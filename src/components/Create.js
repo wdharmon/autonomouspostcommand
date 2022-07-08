@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import {Component} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
 // const dotenv = require('dotenv');
-
+//require('dotenv').config();
 
 const { Configuration, OpenAIApi } = require("openai");
 
@@ -32,7 +32,7 @@ class Create extends Component  {
       // OPENAI Section
 
       const configuration = new Configuration({
-        apiKey: "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", //replace with apikey
+         apiKey: process.env.REACT_APP_OPENAI_API_KEY, //replace with apikey
       });
       const openai = new OpenAIApi(configuration);
       
