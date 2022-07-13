@@ -6,6 +6,9 @@ import { Form, Button, Card } from 'react-bootstrap'
 // const dotenv = require('dotenv');
 //require('dotenv').config();
 
+//new 7/11
+//<div id="react-target"></div>
+
 const { Configuration, OpenAIApi } = require("openai");
 
 // dotenv.config({

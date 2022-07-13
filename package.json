@@ -21,10 +21,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development --progress --color --port 3000",
+    "build": "webpack",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 cp ./dist/bundle.js s3://autonomouspostcommandhub/ --acl public-read",
+    "bd": "npm run build && npm run deploy"
+
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +49,9 @@
     ]
   },
   "devDependencies": {
-    "video.js": "^7.18.1"
+    "video.js": "^7.18.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
   }
 }
