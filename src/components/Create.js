@@ -40,7 +40,7 @@ class Create extends Component  {
       const openai = new OpenAIApi(configuration);
       
       openai.createCompletion("text-davinci-002", {
-        prompt: `Write za detailed, informative, and professional LinkedIn job acceptance post for: ${formDataObj.companyName}`,
+        prompt: `Write a detailed, informative, and professional LinkedIn job acceptance post for: ${formDataObj.companyName}`,
         temperature: 0.8,
         max_tokens: 250,
         top_p: 1,
