@@ -3,18 +3,7 @@ import styled from 'styled-components'
 // import Section from "./Section"
 import {Component} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
-// const dotenv = require('dotenv');
-//require('dotenv').config();
-
-//new 7/11
-//<div id="react-target"></div>
-
 const { Configuration, OpenAIApi } = require("openai");
-
-// dotenv.config({
-//   path: '../.env'
-// })
-
 class Create extends Component  {
   constructor() {
         super()
